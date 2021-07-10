@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorYellow"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginVertical="100dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Firstname : "
+                    android:textSize="20dp"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"/>
+
+                <EditText
+                    android:id="@+id/ed_firstname"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/colorWhite"
+                    android:hint="Firstname"
+                    android:textColorHint="@color/colorWhite"
+                    android:layout_weight="0.5"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Secondname : "
+                    android:textSize="20dp"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"/>
+
+                <EditText
+                    android:id="@+id/ed_secondname"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/colorWhite"
+                    android:hint="Secondname"
+                    android:textColorHint="@color/colorWhite"
+                    android:layout_weight="0.5"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Password : "
+                    android:textSize="20dp"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"/>
+
+                <EditText
+                    android:id="@+id/ed_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/colorWhite"
+                    android:hint="Password"
+                    android:textColorHint="@color/colorWhite"
+                    android:layout_weight="0.5"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="10dp"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Gender : "
+                    android:textSize="20dp"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"/>
+
+                <RadioGroup
+                    android:id="@+id/groupradio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_male"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Male"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20dp"
+                        android:layout_weight="1"/>
+
+                    <RadioButton
+                        android:id="@+id/radio_female"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Female"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20dp"
+                        android:layout_weight="1"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Age : "
+                    android:textSize="20dp"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"/>
+
+                <EditText
+                    android:id="@+id/ed_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/colorWhite"
+                    android:hint="Age"
+                    android:inputType="number"
+                    android:textColorHint="@color/colorWhite"
+                    android:layout_weight="0.5"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginVertical="10dp"
+                android:layout_alignParentBottom="true">
+
+                <ImageView
+                    android:id="@+id/btn_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn_signup"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Update"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorWhite"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

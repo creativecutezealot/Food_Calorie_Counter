@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:padding="5dp"
+    android:background="@drawable/cell_history_radius"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/cell_foodimage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/cell_timestatue"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="dinner"
+                android:textSize="25sp"
+                android:textColor="@color/colorBlack"
+                android:gravity="center_vertical"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/cell_calorie"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="280 Cal"
+                android:textSize="25sp"
+                android:textColor="@color/colorBlack"
+                android:gravity="center_vertical"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorYellow"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_toLeftOf="@+id/btn_add">
+
+            <TextView
+                android:id="@+id/cell_foodname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cherry Tomato"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/cell_foodgroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tomato"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="20dp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btn_detail"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/detail_icon"
+            android:layout_marginRight="3dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+        <ImageView
+            android:id="@+id/btn_add"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/add_icon"
+            android:layout_marginRight="3dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btn_detail"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
